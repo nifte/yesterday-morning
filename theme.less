@@ -1,0 +1,200 @@
+/* Yesterday Morning */
+/* by nifte */
+
+/* colors */
+
+@foreground:	#cccccc;
+@comment:		#8a8a80;
+@background:	#2d2d2d;
+
+@red:			#f2777a;
+@orange:		#ffab64;
+@yellow:		#ffd479;
+@green:			#99cc99;
+@aqua:			#76D4D6;
+@blue:			#78AAD6;
+@purple:		#D6ACD6;
+
+@activeline:	rgba(255, 255, 255, 0.075);
+@highlight: 	rgba(255, 255, 255, 0.2);
+@find:			rgba(255, 255, 255, 0.3);
+@nocolor:		transparent;
+
+/* animations */
+
+@keyframes matching_tag {
+	0%		{background-color: @nocolor;}
+	50%		{background-color: @highlight;}
+	100%	{background-color: @nocolor;}
+}
+
+@keyframes matching_bracket {
+	0%		{background-color: @nocolor;}
+	50%		{background-color: @find;}
+	100%	{background-color: @nocolor;}
+}
+
+@keyframes wild_card {
+	0%		{background-color: @red;}
+	15%		{background-color: @orange;}
+	30%		{background-color: @yellow;}
+	45%		{background-color: @green;}
+	60%		{background-color: @aqua;}
+	75%		{background-color: @blue;}
+	90%		{background-color: @purple;}
+	100%	{background-color: @red;}
+}
+
+/* overlay */
+
+.CodeMirror,															// global style
+.CodeMirror-scroll,														// editor window
+.CodeMirror-gutters {													// gutters
+	color: @foreground;
+	background-color: @background;
+}
+
+.CodeMirror-linenumber {												// line numbers
+	padding: 0 0 0 0.5em;
+	color: @comment;
+}
+
+.CodeMirror-focused .CodeMirror-activeline-background,					// active line
+.CodeMirror-focused .CodeMirror-activeline .CodeMirror-gutter-elt {		// gutter of active line
+	color: @foreground;
+	background-color: @activeline;
+}
+
+.CodeMirror-cursor {													// cursor
+	border-left: 1px solid @foreground !important;
+}
+
+.CodeMirror-selected {													// highlighted text
+	background-color: @highlight;
+}
+
+.CodeMirror-searching {													// ctrl+f highlighting
+	color: @foreground !important;
+	background-color: @highlight;
+	&.searching-current-match {
+		color: #fff !important;
+		background-color: @find;
+	}
+}
+
+/* syntax */
+
+.cm-meta,																// <!doctype> & CSS -identifiers
+.cm-qualifier,															// CSS .identifiers
+.cm-builtin,															// CSS #identifiers
+.cm-tag,																// html <tags>
+.cm-bracket,															// html <> brackets
+.cm-variable,															// javascript global variables
+.cm-variable-3 {														// ::selectors
+	color: @blue;
+}
+
+.cm-string {															// strings
+	color: @green;
+}
+
+.cm-comment {															// comments
+	color: @comment;
+	font-style: italic;
+}
+
+.CodeMirror-matchingtag {												// matching html tags (unfocused)
+	background-color: @nocolor;
+}
+
+.CodeMirror-focused .CodeMirror-matchingtag {							// matching html tags (focused)
+	animation: matching_tag 1s linear 0s infinite;
+}
+
+.CodeMirror-matchingbracket {											// matching brackets (unfocused)
+	color: @foreground !important;
+	background-color: @nocolor;
+}
+
+.CodeMirror-focused .CodeMirror-matchingbracket {						// matching brackets (focused)
+	animation: matching_bracket 0.75s linear 0s infinite;
+}
+
+.cm-atom,																// built-in variables
+.cm-keyword {															// html & javascript key words
+	color: @purple;
+}
+
+.cm-attribute {															// html tag attributes
+	color: @yellow;
+}
+
+.cm-def,																// javascript variables (declaring)
+.cm-variable-2 {														// general variables & javascript variables (referencing)
+	color: @orange;
+}
+
+.cm-property,															// built-in CSS properties
+.cm-operator {															// javascript operators
+	color: @foreground;
+}
+
+.cm-string-2 {															// regex strings
+	color: @aqua;
+}
+
+.cm-number {															// numbers
+	color: @red;
+}
+
+.cm-error,																// errors
+.CodeMirror-nonmatchingbracket {										// unmatched brackets
+	color: #fff !important;
+	background-color: red !important;
+	border-radius: 3px;
+}
+
+/* code folding */
+
+.CodeMirror-foldgutter {												// code folding gutter
+	width: 2em;
+}
+
+.CodeMirror-foldgutter-open,  											// code folding arrow (open)
+.CodeMirror-foldgutter-folded,											// code folding arrow (closed)
+.CodeMirror-foldgutter-blank {											// code folding gutter (no arrow)
+	width: 100%;
+	text-align: center;
+	&::after {
+		font-size: 1em;
+		color: @comment;
+	}
+}
+
+.CodeMirror-foldmarker {												// in-line code folding indicator
+	display: inline-block;
+	margin: 0;
+	border: 0;
+	color: @comment;
+	background-color: @nocolor;
+	&::after {
+		display: block;
+		content: "[...]"; width: 3em;
+		text-align: center;
+		line-height: 1.25em;
+		position: relative;
+	}
+}
+
+/* unknown */
+
+.cm-minus,																// unknown
+.cm-plus,																// unknown
+.cm-quote,																// unknown
+.cm-header,																// unknown
+.cm-hr,																	// unknown
+.cm-link,																// unknown
+.cm-rangeinfo {															// unknown
+	color: #fff;
+	animation: wild_card 2s linear 0s infinite;
+}
