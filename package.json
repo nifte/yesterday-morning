@@ -1,13 +1,13 @@
 {
-	"name": "nifte.yesterday",
+	"name": "nifte.yesterday-morning",
 	"title": "Yesterday Morning",
 	"description": "A simple and clean dark theme inspired by Tomorrow Night",
 	"homepage": "https://github.com/nifte/yesterday-morning",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"author": "nifte",
 	"theme": {
 		"file": "theme.less",
 		"dark": true
 	},
-	"keywords": ["nifte", "yesterday", "morning", "theme"]
+	"keywords": ["nifte", "yesterday", "morning", "dark", "theme"]
 }
