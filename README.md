@@ -19,4 +19,4 @@ Installation
 
 Screenshots
 -----
-![alt text](https://github.com/nifte/yesterday-morning/blob/master/Screenshots/yesterday.PNG?raw=true)
+![image](https://github.com/nifte/yesterday-morning/blob/master/Screenshots/Yesterday%20Morning.png?raw=true)
