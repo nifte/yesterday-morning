@@ -2,7 +2,9 @@ Yesterday Morning for Brackets
 =====
 A simple and clean [Brackets](http://brackets.io/) theme inspired by [Tomorrow Night](https://github.com/chriskempson/tomorrow-theme#tomorrow-night).
 
-It is highly recommended to use the [Indent Guides](https://github.com/lkcampbell/brackets-indent-guides) extension with this theme.
+![image](https://github.com/nifte/yesterday-morning/blob/master/Screenshots/Yesterday%20Morning.png?raw=true)
+
+**Note:** It is highly recommended to use the [Indent Guides](https://github.com/lkcampbell/brackets-indent-guides) extension with this theme.
 
 Installation
 -----
@@ -16,7 +18,3 @@ Installation
 2. In Brackets, navigate to **Help > Show Extensions Folder > User**
 3. Place the **.zip** file in the **User** folder
 4. Refresh Brackets and select **Yesterday Morning** from **View > Themes...**
-
-Screenshots
------
-![image](https://github.com/nifte/yesterday-morning/blob/master/Screenshots/Yesterday%20Morning.png?raw=true)
