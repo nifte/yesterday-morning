@@ -2,7 +2,7 @@ Yesterday Morning for Brackets
 =====
 A simple and clean [Brackets](http://brackets.io/) theme inspired by [Tomorrow Night](https://github.com/chriskempson/tomorrow-theme#tomorrow-night).
 
-![image](https://github.com/nifte/yesterday-morning/blob/master/Screenshots/2kdownloads.png?raw=true)
+![image](https://github.com/nifte/yesterday-morning/blob/master/Screenshots/image1.png?raw=true)
 
 **Note:** It is highly recommended to use the [Indent Guides](https://github.com/lkcampbell/brackets-indent-guides) extension with this theme.
 
