@@ -1,19 +1,17 @@
-Yesterday Morning for Brackets
-=====
+# Yesterday Morning for Brackets
 A simple and clean [Brackets](http://brackets.io/) theme inspired by [Tomorrow Night](https://github.com/chriskempson/tomorrow-theme#tomorrow-night).
 
 ![image](https://github.com/nifte/yesterday-morning/blob/master/screenshots/screenshot.png?raw=true)
 
 **Note:** It is highly recommended to use the [Indent Guides](https://github.com/lkcampbell/brackets-indent-guides) extension with this theme.
 
-Installation
------
+## Installation
+### Extension Manager
 1. In Brackets, navigate to **File > Extension Manager...**
 2. In the **Themes** tab, search for **Yesterday Morning**
 3. Click **Install** and select **Yesterday Morning** from **View > Themes...**
 
-**OR**
-
+### Manual
 1. Download the **.zip** file
 2. In Brackets, navigate to **Help > Show Extensions Folder > User**
 3. Place the **.zip** file in the **User** folder
